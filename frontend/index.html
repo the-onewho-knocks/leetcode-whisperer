@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeetCode Whisperer ♟️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>LeetCode Whisperer ♟️</h1>
+    <p class="subtitle">Hints, not solutions.</p>
+
+    <textarea
+      id="problemInput"
+      placeholder="Paste the LeetCode problem statement here..."
+    ></textarea>
+
+    <button id="whisperBtn">Whisper</button>
+
+    <div id="result" class="hidden">
+      <div class="card">
+        <h2>Pattern</h2>
+        <p id="pattern"></p>
+      </div>
+
+      <div class="card">
+        <h2>Chess Analogy</h2>
+        <p id="analogy"></p>
+      </div>
+
+      <div class="card">
+        <h2>Hints</h2>
+
+        <button class="hint-btn" data-level="1">Reveal Hint 1</button>
+        <p id="hint1" class="hint hidden"></p>
+
+        <button class="hint-btn" data-level="2">Reveal Hint 2</button>
+        <p id="hint2" class="hint hidden"></p>
+
+        <button class="hint-btn" data-level="3">Reveal Hint 3</button>
+        <p id="hint3" class="hint hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
