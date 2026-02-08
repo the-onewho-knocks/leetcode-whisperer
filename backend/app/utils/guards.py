@@ -2,21 +2,17 @@
 
 import re
 
-
-CODE_BLOCK_PATTERN = re.compile(r"```")
-INLINE_CODE_PATTERN = re.compile(r"`.+?`")
+# Block fenced code blocks ONLY (```code```)
+CODE_BLOCK_PATTERN = re.compile(r"```[\s\S]*?```", re.MULTILINE)
 
 
 def enforce_no_code_policy(text: str) -> str:
     """
-    Blocks responses that contain code blocks or inline code.
-    This is a safety net in case the model disobeys instructions.
+    Allows inline backticks for emphasis.
+    Blocks fenced code blocks to prevent full solutions.
     """
 
     if CODE_BLOCK_PATTERN.search(text):
         raise ValueError("Policy violation: code blocks detected")
-
-    if INLINE_CODE_PATTERN.search(text):
-        raise ValueError("Policy violation: inline code detected")
 
     return text

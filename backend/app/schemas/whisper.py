@@ -9,5 +9,13 @@ class WhisperRequest(BaseModel):
     user_code: Optional[str] = None
 
 
+class HintLevels(BaseModel):
+    level_1: str
+    level_2: str
+    level_3: str
+
+
 class WhisperResponse(BaseModel):
-    hints: str
+    pattern: str
+    chess_analogy: str
+    hints: HintLevels
