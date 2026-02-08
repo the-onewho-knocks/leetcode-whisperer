@@ -35,8 +35,11 @@ OUTPUT FORMAT (FOLLOW STRICTLY):
 Pattern:
 <pattern_name>
 
-Chess Analogy:
-<chess analogy for the chosen pattern>
+Simple Explanation:
+Explain the core idea of the problem in very simple words,
+as if explaining to a beginner.
+Do not use metaphors. Do not use analogies.
+Do not give code.
 
 Hint Level 1:
 <conceptual nudge>

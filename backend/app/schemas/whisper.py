@@ -14,8 +14,7 @@ class HintLevels(BaseModel):
     level_2: str
     level_3: str
 
-
 class WhisperResponse(BaseModel):
     pattern: str
-    chess_analogy: str
+    simple_explanation: str
     hints: HintLevels

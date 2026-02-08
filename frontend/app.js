@@ -3,7 +3,8 @@ const problemInput = document.getElementById("problemInput");
 
 const result = document.getElementById("result");
 const patternEl = document.getElementById("pattern");
-const analogyEl = document.getElementById("analogy");
+const explanationEl = document.getElementById("explanation");
+
 
 const hintEls = {
   1: document.getElementById("hint1"),
@@ -30,7 +31,7 @@ whisperBtn.addEventListener("click", async () => {
   const data = await res.json();
 
   patternEl.innerText = data.pattern;
-  analogyEl.innerText = data.chess_analogy;
+  explanationEl.innerText = data.simple_explanation;
 
   hintEls[1].innerText = data.hints.level_1;
   hintEls[2].innerText = data.hints.level_2;

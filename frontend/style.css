@@ -5,7 +5,11 @@
 
 body {
   margin: 0;
-  background: #0f1117;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #1b2a4e55, transparent 40%),
+    radial-gradient(1000px 500px at 90% 10%, #3b82f655, transparent 35%),
+    #0f1117;
   color: #e6e6eb;
 }
 
@@ -16,8 +20,19 @@ body {
 }
 
 h1 {
-  font-size: 2.2rem;
-  margin-bottom: 4px;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
+
+p {
+  line-height: 1.65;
 }
 
 .subtitle {
@@ -42,32 +57,40 @@ textarea::placeholder {
 }
 
 button {
-  margin-top: 16px;
-  padding: 12px 20px;
-  background: #3b82f6;
+  margin-top: 18px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
   border: none;
-  border-radius: 10px;
+  border-radius: 14px;
   color: white;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
-  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
 }
 
+button:active {
+  transform: translateY(0);
+}
 .card {
   margin-top: 28px;
-  padding: 20px;
-  background: #161a22;
-  border-radius: 14px;
-  border: 1px solid #222736;
+  padding: 22px;
+  background: rgba(22, 26, 34, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
 
 .hint-btn {
   background: transparent;
