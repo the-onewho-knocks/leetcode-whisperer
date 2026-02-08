@@ -1,6 +1,6 @@
-# LeetCode Whisperer
+# CodeSage
 
-LeetCode Whisperer is an AI-powered learning assistant designed to help users solve Data Structures and Algorithms problems without giving away full solutions. It focuses on guiding thinking through patterns, simplified explanations, and progressively revealed hints.
+CodeSage is an AI-powered learning assistant designed to help users solve Data Structures and Algorithms problems without giving away full solutions. It focuses on guiding thinking through patterns, simplified explanations, and progressively revealed hints.
 
 The goal is to help users think like problem solvers, not copy answers.
 
